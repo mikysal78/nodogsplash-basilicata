@@ -18,3 +18,7 @@ Copiare i file presenti in 'config' nella tua path '/etc/config' sostituendo que
 
 Copiare i file presenti in 'nodogsplash/htdocs' nella tua path '/etc/nodogsplash/htdocs'
 
+
+---------------
+
+Si ringrazia Claud43 di Palermo per queste configurazioni
