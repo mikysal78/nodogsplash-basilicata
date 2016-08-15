@@ -14,7 +14,7 @@ https://github.com/ninuxorg/nnxx-firmware/tree/NoDogSplash
 Come usare questo git
 ---------------
 
-Copiare i file presenti in "config" nella tua path "/etc/config" sostituendo quelli attuale. (leggi i file e adattali alla tua rete)
+Copiare i file presenti in 'config' nella tua path '/etc/config' sostituendo quelli attuale. (leggi i file e adattali alla tua rete)
 
-Copiare i file presenti in "nodogsplash/htdocs" nella tua path "/etc/nodogsplash/htdocs"
+Copiare i file presenti in 'nodogsplash/htdocs' nella tua path '/etc/nodogsplash/htdocs'
 
