@@ -1,4 +1,4 @@
-config nodogsplash
+config instance
   # Set to 1 to enable nodogsplash
   option enabled 1
 
