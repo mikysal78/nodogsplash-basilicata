@@ -19,6 +19,12 @@ Copiare i file presenti in 'config' nella tua path '/etc/config' sostituendo que
 Copiare i file presenti in 'nodogsplash/htdocs' nella tua path '/etc/nodogsplash/htdocs'
 
 
+Escludere l'accesso su determinati siti web
+---------------
+
+Copiare i file presenti in 'scripts' nella directory /root e dare i permessi di esecuzione al file 'ban-domains.sh'
+Modificare il file 'banned.txt' a proprio piacimento per negare l'accesso a determinati siti web
+
 ---------------
 
 Si ringrazia Claud43 di Palermo per queste configurazioni
