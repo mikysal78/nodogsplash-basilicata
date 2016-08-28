@@ -1,6 +1,11 @@
 #!/bin/sh
 
-for domain in `cat /shared/banned.txt`; do
+BANNED=/shared/banned.txt
+iptables -t nat -F ndsOUT
+echo "" > /tmp/ips.txt
+
+
+for domain in `cat $BANNED`; do
         dig @8.8.8.8 $domain | egrep [0-9] | grep IN| awk {'print $5'} >> /tmp/ips.txt
 done
 
