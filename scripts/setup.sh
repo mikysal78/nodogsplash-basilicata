@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Configura rete hotspot
 uci delete network.hotspot
 uci set network.hotspot=interface
@@ -16,6 +14,7 @@ uci set wireless.hotspot.network=hotspot
 uci set wireless.hotspot.ssid=ninux.org-public
 uci set wireless.hotspot.encryption=none
 uci set wireless.hotspot.wds=1
+uci set wireless.hotspot.ifname=hotspot
 
 # Configura il DHCP per la rete hotspot
 uci delete dhcp.hotspot
@@ -58,3 +57,4 @@ uci set firewall.hotspot_rule_dhcp.proto=udp
 uci set firewall.hotspot_rule_dhcp.target=ACCEPT
 
 uci commit
+wifi
