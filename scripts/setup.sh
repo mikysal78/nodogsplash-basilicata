@@ -11,7 +11,7 @@ uci set wireless.hotspot=wifi-iface
 uci set wireless.hotspot.device=radio0
 uci set wireless.hotspot.mode=ap
 uci set wireless.hotspot.network=hotspot
-uci set wireless.hotspot.ssid=ninux.org-public
+uci set wireless.hotspot.ssid=ninux.org-hotspot
 uci set wireless.hotspot.encryption=none
 uci set wireless.hotspot.wds=1
 uci set wireless.hotspot.ifname=hotspot
@@ -22,7 +22,7 @@ uci set dhcp.hotspot=dhcp
 uci set dhcp.hotspot.interface=hotspot
 uci set dhcp.hotspot.start=50
 uci set dhcp.hotspot.limit=200
-uci set dhcp.hotspot.leasetime=1h
+uci set dhcp.hotspot.leasetime=30m
 
 # Configura il firewall per la rete hotspot
 ## Configura la zona hotspot
