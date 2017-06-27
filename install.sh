@@ -1,16 +1,17 @@
 #/bin/sh
+INSTALL=/tmp/nodogsplash-basilicata-master
 
 rm -rf /etc/nodogsplash/htdocs/*
-mv nodogsplash/htdocs/* /etc/nodogsplash/htdocs/
+mv $INSTALL/nodogsplash/htdocs/* /etc/nodogsplash/htdocs/
 
 mv /etc/config/nodogsplash /etc/config/nodogsplash.orig
-cat config/nodogsplash > /etc/config/nodogsplash
+cat $INSTALL/config/nodogsplash > /etc/config/nodogsplash
 
 mv /etc/config/sqm /etc/config/sqm.orig
-cat config/sqm > /etc/config/sqm
+cat $INSTALL/config/sqm > /etc/config/sqm
 
 
-mv scripts/* /root/
+mv $INSTALL/scripts/* /root/
 chmod +x /root/*.sh
 
 opkg update
@@ -20,5 +21,4 @@ sh /root/setup.sh
 
 rm -rf /root/setup.sh
 
-echo "Ora pio cancellare la directory di installazione con il comando:"
-echo "rm -rf /root/nodogsplash-basilicata"
+echo "done"
