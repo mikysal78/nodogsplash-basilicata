@@ -10,6 +10,7 @@ for domain in `cat $BANNED`; do
 done
 
 for ip in `cat /tmp/ips.txt`; do
-        iptables -t nat -I ndsOUT -p tcp -s 192.168.20.0/24 -d $ip --dport 80 -j DNAT --to 192.168.20.1:2050
+        iptables -t nat -I ndsOUT -p tcp -s 192.168.20.0/24 -d $ip -j DNAT --to 192.168.20.1:2050
 done
 
+echo "for check use: iptables -t nat -L -n"
