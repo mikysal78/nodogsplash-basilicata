@@ -21,7 +21,7 @@ uci delete dhcp.hotspot
 uci set dhcp.hotspot=dhcp
 uci set dhcp.hotspot.interface=hotspot
 uci set dhcp.hotspot.start=50
-uci set dhcp.hotspot.limit=200
+uci set dhcp.hotspot.limit=250
 uci set dhcp.hotspot.leasetime=30m
 
 # Configura il firewall per la rete hotspot
