@@ -1,8 +1,14 @@
 #!/bin/sh
 
 BANNED=$PWD/banned.txt
-iptables -t nat -N ndsOUT
-iptables -t nat -F ndsOUT
+
+if ! iptables -t nat -L ndsOUT > /dev/null
+then
+   iptables -t nat -N ndsOUT
+else
+   iptables -t nat -F ndsOUT
+fi
+
 echo "" > /tmp/ips.txt
 
 
