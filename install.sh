@@ -2,6 +2,7 @@
 INSTALL=/tmp/nodogsplash-basilicata-master
 
 rm -rf /etc/nodogsplash/htdocs/*
+mkdir -p /etc/nodogsplash/htdocs/
 mv $INSTALL/nodogsplash/htdocs/* /etc/nodogsplash/htdocs/
 
 mv /etc/config/nodogsplash /etc/config/nodogsplash.orig
